@@ -15,3 +15,7 @@ If there is no second highest salary, then the query should return null.
 
 Solution 2)# Write your MySQL query statement below
 select max(Salary) as SecondHighestSalary from Employee where Salary!=(Select max(Salary) from Employee)
+
+
+Output:-
+Your runtime beats 91.86 % of mysql submissions.
