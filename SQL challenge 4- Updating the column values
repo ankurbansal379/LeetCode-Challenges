@@ -21,4 +21,8 @@ After running your query, the above salary table should have the following rows:
 
 Solution)
 # Write your MySQL query statement below
-update salary set sex='m', sex='f' where sex='f' and sex='m'
+update salary
+set sex= case sex when 'm' then 'f' when 'f' then 'm'
+else 
+sex
+end
